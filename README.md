@@ -31,7 +31,7 @@ python manage.py runserver
 ```
 
 ## Autor
-Rodrigo Medrano
+Rodrigo Medrano España
 
 ## Licencia
 MIT
