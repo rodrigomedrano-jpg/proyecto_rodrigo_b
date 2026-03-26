@@ -1,0 +1,13 @@
+{% extends 'cursos/base.html' %}
+
+{% block title %}
+  Pruebas
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1>Esta es una pagina de prueba</h1>
+    <p>Saludos a {{ nombre }}</p>
+    <p>{{ biografia | lower | truncatechars:20}}</p>
+  </div>
+{% endblock %}

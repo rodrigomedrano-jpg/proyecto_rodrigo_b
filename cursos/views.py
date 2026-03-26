@@ -116,3 +116,10 @@ def acerca(request):
         'vision': 'Ser la plataforma líder en educación en línea',
     }
     return render(request, 'cursos/acerca.html', contexto)
+
+def prueba(request):
+    contexto={
+        'nombre':'Rodrigo Medrano',
+        'biografia': 'ESTE ES UN TEXTO MUY LARGO QUE DEBERIA REDUCIRSE AL MOMENTO DE IMPRIMIR EN PANTALLA'
+    }
+    return render(request, 'cursos/prueba.html', contexto)

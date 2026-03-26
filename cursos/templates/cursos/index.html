@@ -2,7 +2,9 @@
 {% load static %}
 
 {% block title %}Inicio - Mi LMS{% endblock %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'cursos/css/index.css' %}">
+{% endblock %}
 {% block content %}
 <div class="container">
     <!-- Hero Section -->

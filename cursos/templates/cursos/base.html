@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Mi LMS{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'cursos/css/styles.css' %}">
+    {% block extra_css %}
+    {% endblock %}
 </head>
 <body>
     <!-- Navegación -->
@@ -18,6 +20,7 @@
                 <li><a href="{% url 'cursos:index' %}">Inicio</a></li>
                 <li><a href="{% url 'cursos:lista_cursos' %}">Cursos</a></li>
                 <li><a href="{% url 'cursos:acerca' %}">Acerca de</a></li>
+                <li><a href="{% url 'cursos:prueba'%}">Prueba</a></li>
             </ul>
         </div>
     </nav>
