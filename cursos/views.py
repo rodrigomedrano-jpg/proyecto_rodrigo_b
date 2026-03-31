@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from datetime import datetime
 
 # Create your views here.
 
@@ -120,6 +121,12 @@ def acerca(request):
 def prueba(request):
     contexto={
         'nombre':'Rodrigo Medrano',
-        'biografia': 'ESTE ES UN TEXTO MUY LARGO QUE DEBERIA REDUCIRSE AL MOMENTO DE IMPRIMIR EN PANTALLA'
+        'biografia': 'ESTE ES UN TEXTO MUY LARGO QUE DEBERIA REDUCIRSE AL MOMENTO DE IMPRIMIR EN PANTALLA',
+        'edad': 17,
+        'es_premium': True,
+        'fecha_registro': datetime.now(),
+        'habilidades': ['Python','Django','HTML','CSS','JavaScript'],
+        'seguidores': 1520,
+        'web_personal': None
     }
     return render(request, 'cursos/prueba.html', contexto)
