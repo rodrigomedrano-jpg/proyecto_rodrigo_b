@@ -32,7 +32,21 @@
       {% empty %}
         <li>No hay habilidades disponibles.</li>
       {% endfor %}
-    </ul>
-    
+    </ul>    
   </div>
+  <div class="container">
+<form action="{% url 'cursos:prueba' %}" method="post">
+    {%csrf_token%}
+    Nombre:<br>
+    <input type="text" name="nombre" id="nombre"><br>
+    Edad: <br>
+    <input type="number" name="edad" id="edad">
+    <br>
+    Biografia: <br>
+    <textarea name="biografia" id="biografia" cols="30" rows="10"></textarea>
+    <br>
+    <button type="submit">Ingresar</button>
+  </form>
+  </div>
+  
 {% endblock %}
